@@ -14,19 +14,19 @@ import java.sql.SQLException;
  * @author fernando.tsuda
  */
 public class ConexaoBD {
-
-  protected Connection obterConexao() throws SQLException, ClassNotFoundException {
-    Connection conn = null;
-
-    // Passo 1: Registrar o driver JDBC
-    Class.forName("org.apache.derby.jdbc.ClientDataSource");
     
-    // Passo 2: Abrir a conexão
-    conn = DriverManager.getConnection(
-	    "jdbc:derby://localhost:1527/bdagenda",
-	    "SibeleNepomuceno", // usuário BD
-	    "beli1771"); // senha BD
-    return conn;
-  }
+    public Connection obterConexao() throws SQLException, ClassNotFoundException {
+        Connection conn = null;
+
+        // Passo 1: Registrar o driver JDBC
+        Class.forName("org.apache.derby.jdbc.ClientDataSource");
+
+        // Passo 2: Abrir a conexão
+        conn = DriverManager.getConnection(
+                "jdbc:derby://localhost:1527/sample",
+                "app", // usuário BD
+                "app"); // senha BD
+        return conn;
+    }
 
 }
