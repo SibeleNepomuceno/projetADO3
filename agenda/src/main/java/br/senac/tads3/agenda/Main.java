@@ -12,12 +12,15 @@ import java.util.Scanner;
  * @author PC-vitrio
  */
 public class Main {
+    // METODO APENAS PARA IMPRESSÃO DO MENU E ESCOLHA DE AÇÃO DESEJADA.
     public static void main(String[] args) {
         AgendaProvider instancia = new AgendaProvider();
         Scanner entrada = new Scanner(System.in);
 
         do {
-            System.out.println("***** DIGITE UMA OPÇÃO *****");
+            System.out.println("**********SEJA BEM VINDO A LISTA SENAC DE CONTATOS**********");
+            
+            System.out.println(" DIGITE UMA OPÇÃO ABAIXO : ");
             System.out.println("(1) Listar contatos");
             System.out.println("(2) Incluir novo contato");
             System.out.println("(3) Deletar contato");

@@ -24,7 +24,7 @@ public class Contato {
     private String telefone; 
     
     public Contato(String nome, String strDataNasc, String email,String telefone) throws Exception {
-        
+        // CRIAÇÃO DE GET E SET PARA CADA PARAMETRO USADO PARA PREENCHER A LISTA DE CONTATOS
         if(nome.equals("") || nome == null) {
             throw new Exception("Nome inválido");
         }

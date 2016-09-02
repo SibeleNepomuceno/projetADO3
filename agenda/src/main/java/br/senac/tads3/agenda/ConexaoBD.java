@@ -14,7 +14,7 @@ import java.sql.SQLException;
  * @author fernando.tsuda
  */
 public class ConexaoBD {
-    
+    // CLASSE DE CONEXÃO
     public Connection obterConexao() throws SQLException, ClassNotFoundException {
         Connection conn = null;
 

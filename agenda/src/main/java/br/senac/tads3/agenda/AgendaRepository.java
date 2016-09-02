@@ -18,6 +18,7 @@ import java.util.List;
  * @author PC-vitrio
  */
 public class AgendaRepository {
+    // ESTA CLASSE É RESPONSAVEL POR ACESSAR OS DADOS, OU SEJA, DELEGAR RESPONSABILIDADE DOS ACESSOS AOS DADOS DA AGENDA
     private final ConexaoBD _con;
     public AgendaRepository() {
        this._con = new ConexaoBD();
